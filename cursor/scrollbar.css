@@ -1,0 +1,25 @@
+body {
+  height: 1000vh;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(45deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 35%, rgb(0, 212, 255) 100%);
+}
+
+.wrap {
+  position: fixed;
+  width: 100vw;
+  height: 5px;
+  border-radius: 14px;
+  top: 10px;
+  left: 0;
+  background-color: lightgray;
+  overflow: hidden;
+}
+
+.screen-scroll {
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: red;
+  border-radius: 14px;
+}

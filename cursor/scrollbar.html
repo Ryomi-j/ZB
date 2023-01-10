@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="screen-scroll"></div>
+    </div>
+
+    <script>
+      let scrollY = 0;
+      let target = document.querySelector(".screen-scroll");
+
+      window.addEventListener("scroll", () => {
+        let documentHeight = document.documentElement.scrollHeight;
+        let browserHeight = window.innerHeight;
+        scrollY = document.documentElement.scrollTop;
+
+        let percent = (scrollY / (documentHeight - browserHeight)) * 100 ;
+        // target.style.height = Math.round(percent) + "%";  세로 스크롤바
+        target.style.width = Math.round(percent) + "%";  // 가로 스크롤바
+      });
+    </script>
+  </body>
+</html>

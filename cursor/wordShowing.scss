@@ -1,0 +1,27 @@
+$bg : green;
+
+body {
+  background-color: $bg;
+}
+
+#wrap {
+  width: auto;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+#wrap h1 {
+  margin: 0;
+  padding: 20px;
+  font-size: 1.5rem;
+}
+
+#hidden {
+  @extend body;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
